@@ -1,0 +1,18 @@
+!SESSION 2025-05-09 20:21:46.167 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-05-09 20:23:19.028
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-09 20:23:19.031
+!MESSAGE Log4j2 initialized with config file C:\Users\danilo\Desktop\dma\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-09 20:23:28.298
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-09 20:37:07.899
+!MESSAGE Indexed 'toggle_led_dma' (19 sources, 81 headers) in 8.22 sec: 4,419 declarations; 17,824 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
