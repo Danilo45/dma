@@ -42,6 +42,7 @@
 /* Private variables ---------------------------------------------------------*/
 DMA_HandleTypeDef hdma_memtomem_dma2_stream0;
 /* USER CODE BEGIN PV */
+uint16_t led[2] = {0x0000, 0xFFFF};
 
 /* USER CODE END PV */
 
@@ -96,9 +97,16 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  HAL_DMA_Start(&hdma_memtomem_dma2_stream0, (uint32_t)&led[0], (uint32_t)&GPIOD->ODR, 2);
+	  HAL_DMA_PollForTransfer(&hdma_memtomem_dma2_stream0, HAL_DMA_FULL_TRANSFER, HAL_MAX_DELAY);
+	  HAL_Delay(1000);
+	  HAL_DMA_Start(&hdma_memtomem_dma2_stream0, (uint32_t)&led[1], (uint32_t)&GPIOD->ODR, 2);
+	  HAL_DMA_PollForTransfer(&hdma_memtomem_dma2_stream0, HAL_DMA_FULL_TRANSFER, HAL_MAX_DELAY);
+	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
@@ -166,8 +174,8 @@ static void MX_DMA_Init(void)
   hdma_memtomem_dma2_stream0.Init.Direction = DMA_MEMORY_TO_MEMORY;
   hdma_memtomem_dma2_stream0.Init.PeriphInc = DMA_PINC_DISABLE;
   hdma_memtomem_dma2_stream0.Init.MemInc = DMA_MINC_DISABLE;
-  hdma_memtomem_dma2_stream0.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-  hdma_memtomem_dma2_stream0.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+  hdma_memtomem_dma2_stream0.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+  hdma_memtomem_dma2_stream0.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
   hdma_memtomem_dma2_stream0.Init.Mode = DMA_NORMAL;
   hdma_memtomem_dma2_stream0.Init.Priority = DMA_PRIORITY_LOW;
   hdma_memtomem_dma2_stream0.Init.FIFOMode = DMA_FIFOMODE_ENABLE;

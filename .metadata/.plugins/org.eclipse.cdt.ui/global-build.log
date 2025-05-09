@@ -1,0 +1,56 @@
+21:22:25 **** Incremental Build of configuration Debug for project toggle_led_dma ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "toggle_led_dma.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\danilo\Desktop\dma\toggle_led_dma\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="toggle_led_dma.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: toggle_led_dma.elf
+ 
+arm-none-eabi-size  toggle_led_dma.elf 
+arm-none-eabi-objdump -h -S toggle_led_dma.elf  > "toggle_led_dma.list"
+   text	   data	    bss	    dec	    hex	filename
+   7484	     16	   1664	   9164	   23cc	toggle_led_dma.elf
+Finished building: default.size.stdout
+ 
+Finished building: toggle_led_dma.list
+ 
+21:22:48 **** Incremental Build of configuration Debug for project toggle_led_dma ****
+make -j8 all 
+arm-none-eabi-size  toggle_led_dma.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7484	     16	   1664	   9164	   23cc	toggle_led_dma.elf
+Finished building: default.size.stdout
+ 
+21:23:56 **** Incremental Build of configuration Debug for project toggle_led_dma ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "toggle_led_dma.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\danilo\Desktop\dma\toggle_led_dma\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="toggle_led_dma.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: toggle_led_dma.elf
+ 
+arm-none-eabi-size  toggle_led_dma.elf 
+arm-none-eabi-objdump -h -S toggle_led_dma.elf  > "toggle_led_dma.list"
+   text	   data	    bss	    dec	    hex	filename
+   7492	     16	   1664	   9172	   23d4	toggle_led_dma.elf
+Finished building: default.size.stdout
+ 
+Finished building: toggle_led_dma.list
+ 
+21:24:32 **** Incremental Build of configuration Debug for project toggle_led_dma ****
+make -j8 all 
+arm-none-eabi-size  toggle_led_dma.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7492	     16	   1664	   9172	   23d4	toggle_led_dma.elf
+Finished building: default.size.stdout
+ 
+21:28:48 **** Incremental Build of configuration Debug for project toggle_led_dma ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "toggle_led_dma.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\danilo\Desktop\dma\toggle_led_dma\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="toggle_led_dma.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: toggle_led_dma.elf
+ 
+arm-none-eabi-size  toggle_led_dma.elf 
+arm-none-eabi-objdump -h -S toggle_led_dma.elf  > "toggle_led_dma.list"
+   text	   data	    bss	    dec	    hex	filename
+   7496	     16	   1664	   9176	   23d8	toggle_led_dma.elf
+Finished building: default.size.stdout
+ 
+Finished building: toggle_led_dma.list
+ 
